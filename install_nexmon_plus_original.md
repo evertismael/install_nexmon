@@ -91,7 +91,7 @@ ifconfig wlan0 down
 ifconfig wlan0 up 
 iw dev wlan0 interface add mon0 type monitor
 ip link set mon0 up 
-CFG_STR=$(mcp -c 44/20 -C 1 -N 1) 
+CFG_STR=$(mcp -c 36/80 -C 1 -N 1) 
 nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR 
 nexutil -k
 tcpdump -i wlan0 dst port 5500
