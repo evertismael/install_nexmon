@@ -24,9 +24,8 @@ make
 make backup-firmware
 make install-firmware
 cd $NEXDIR/utilities/nexutil/
-make
-make install
-apt-get remove wpasupplicant
+make && make install
+
 echo 'end build'
 
 
