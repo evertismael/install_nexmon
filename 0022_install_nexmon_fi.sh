@@ -35,11 +35,11 @@ echo "end mon0"
 
 
 #setStatus "Setting up Persistance"
-#cd $NEXDIR/patches/bcm43455c0/7_45_206/nexmon_csi/
-#cd brcmfmac_4.19.y-nexmon
-#mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig
-#cp ./brcmfmac.ko $(modinfo brcmfmac -n)
-#depmod -a
+cd $NEXDIR/patches/bcm43455c0/7_45_206/nexmon/
+cd brcmfmac_5.4.y-nexmon
+mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig  #copy firmawe-backup.
+cp ./brcmfmac.ko $(modinfo brcmfmac -n)
+depmod -a
 #echo 'end patches'
 
 setStatus "Completed"
