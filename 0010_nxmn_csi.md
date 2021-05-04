@@ -45,6 +45,7 @@ nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
 
 Setting up logical links:
 ```sh
+cd /home/pi
 sudo su
 tmux new -c /home/pi -s nexmon 'bash install_nexmon/scripts/0010_links.sh | tee ./0010.log'
 ```
@@ -63,6 +64,6 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0NTQwMSwxNDI2Njg2NDM0LC0xMjU5OD
-k4MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
+eyJoaXN0b3J5IjpbMTIxMjA1OTQ3MiwxNDI2Njg2NDM0LC0xMj
+U5ODk4MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
 -->
