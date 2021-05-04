@@ -44,8 +44,11 @@ cd $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/
 cd brcmfmac_5.4.y-nexmon
 mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig
 cp ./brcmfmac.ko $(modinfo brcmfmac -n)
+cp $NEXDIR/patches/bcm43455c0/7_45_189/brcmfmac43455-sdio.raspberrypi,4-model-b.txt /lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/
+
 depmod -a
 echo 'end patches'
-# $(modinfo brcmfmac -n) = /lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+
+# $(modinfo brcmfmac -n) = /lib/modules/5.4.83-v7l+/kernel/lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless//drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
 
 echo 'done 0020'
