@@ -2,6 +2,7 @@
 - _Important:_ Router is configured with a specific channel and bandwidth (161/40) in this case
 
 ```sh
+pkill wpa_supplicant
 ip link set mon0 down
 ifconfig wlan0 down
 ifconfig wlan0 up 
@@ -45,5 +46,5 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTk4MDMxMl19
+eyJoaXN0b3J5IjpbMTcyNTQ4MDc2MiwxOTQ1OTgwMzEyXX0=
 -->
