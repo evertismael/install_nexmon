@@ -13,7 +13,7 @@ sudo apt install git libgmp3-dev gawk qpdf bc bison flex libssl-dev make automak
 
 sudo reboot
 ```
-Install proper heraders for the kernel version:
+Install proper headers for the kernel version:
 
 ```sh
 sudo wget https://raw.githubusercontent.com/RPi-Distro/rpi-source/master/rpi-source -O /usr/local/bin/rpi-source && sudo chmod +x /usr/local/bin/rpi-source && /usr/local/bin/rpi-source -q --tag-update
@@ -74,7 +74,8 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMzEzNTE2MSwtMjA3MzY2MTE5NSwzNj
-c3Nzk2MTksMTIxMjA1OTQ3MiwxNDI2Njg2NDM0LC0xMjU5ODk4
-MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
+eyJoaXN0b3J5IjpbNzkxODY3NjgxLC03MzMxMzUxNjEsLTIwNz
+M2NjExOTUsMzY3Nzc5NjE5LDEyMTIwNTk0NzIsMTQyNjY4NjQz
+NCwtMTI1OTg5ODAwMCwtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ
+==
 -->
