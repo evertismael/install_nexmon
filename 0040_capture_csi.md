@@ -2,19 +2,7 @@
 - _Important:_ Router is configured with a specific channel and bandwidth (161/40) in this case
 
 ```sh
-pkill wpa_supplicant
-ip link set mon0 down
-ifconfig wlan0 down
-
-ifconfig wlan0 up 
-iw dev wlan0 interface add mon0 type monitor
-ip link set mon0 up 
-CFG_STR=$(mcp -c 1/20 -C 1 -N 1) 
-nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR 
-nexutil -k
-tcpdump -i wlan0 dst port 5500
-
-pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 1/20 -C 1 -N 1) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
+pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
 
 #to stream to a file:
 ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 100/80 -C 1 -N 1) ; nexutil -Iwlan0 -s500 -b -l34 -v$CFG_STR ; nexutil -k ; tcpdump -i wlan0 dst port 5500 -vv -w capture.pcap -c 1000
@@ -49,6 +37,6 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODQ0OTk5LDE5Mjc5NzM3MzAsMTcyNT
-Q4MDc2MiwxOTQ1OTgwMzEyXX0=
+eyJoaXN0b3J5IjpbMTM2OTA2NjY4MywxOTI3OTczNzMwLDE3Mj
+U0ODA3NjIsMTk0NTk4MDMxMl19
 -->
