@@ -36,6 +36,7 @@ git clone https://github.com/seemoo-lab/nexmon_csi.git
 # missing file in driver:
 wget https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
 
+cd /home/pi/nexmon
 ```
 Add chanspecs:
 
@@ -79,8 +80,8 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ3OTg2OTksNzkxODY3NjgxLC03Mz
-MxMzUxNjEsLTIwNzM2NjExOTUsMzY3Nzc5NjE5LDEyMTIwNTk0
-NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMCwtNDE1NTQwNzMsLT
-E2NTM0NjA4OTZdfQ==
+eyJoaXN0b3J5IjpbLTEwNDk5NzM0OTYsLTE3MDQ3OTg2OTksNz
+kxODY3NjgxLC03MzMxMzUxNjEsLTIwNzM2NjExOTUsMzY3Nzc5
+NjE5LDEyMTIwNTk0NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMC
+wtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ==
 -->
