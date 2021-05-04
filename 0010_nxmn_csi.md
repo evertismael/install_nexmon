@@ -4,6 +4,7 @@
 -Source 1: https://github.com/nexmonster/nexmon_csi/tree/pi-5.4.51
 -Source 2: https://github.com/nexmonster/nexmon_csi/tree/pi-4.19.97#get-kernel-headers
 
+- Kernel version: 5.4.83-v7l+
 
 Install dependencies:
 ```sh
@@ -87,7 +88,7 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDMwNTc1NCw0MjI5MDc2NTMsODQyMz
+eyJoaXN0b3J5IjpbLTgwODQwNDY3OSw0MjI5MDc2NTMsODQyMz
 kxMDAwLC0xMDQ5OTczNDk2LC0xNzA0Nzk4Njk5LDc5MTg2NzY4
 MSwtNzMzMTM1MTYxLC0yMDczNjYxMTk1LDM2Nzc3OTYxOSwxMj
 EyMDU5NDcyLDE0MjY2ODY0MzQsLTEyNTk4OTgwMDAsLTQxNTU0
