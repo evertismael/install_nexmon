@@ -44,7 +44,7 @@ cd brcmfmac_5.4.y-nexmon
 mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig  #copy firmawe-backup.
 cp ./brcmfmac.ko $(modinfo brcmfmac -n)
 
-FILE_TXT="$NEXDIR/../brcmfmac43455-sdio.raspberrypi,4-model-b.txt"
+FILE_TXT="/home/pi/brcmfmac43455-sdio.raspberrypi,4-model-b.txt"
 
 DEST1="/lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/"
 
