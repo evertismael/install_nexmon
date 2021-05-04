@@ -20,7 +20,6 @@ echo 'setting up environment'
 
 setStatus "Downloading Nexmon_CSI"
 cd $NEXDIR/patches/bcm43455c0/7_45_189/
-git clone https://github.com/seemoo-lab/nexmon_csi.git
 echo 'end download nexmon_csi'
 
 setStatus "Building and installing Nexmon_CSI"
@@ -42,14 +41,11 @@ echo 'end nexutil'
 
 setStatus "Setting up Persistance"
 cd $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/
-cd brcmfmac_4.19.y-nexmon
+cd brcmfmac_5.4.y-nexmon
 mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig
 cp ./brcmfmac.ko $(modinfo brcmfmac -n)
 depmod -a
 echo 'end patches'
+# $(modinfo brcmfmac -n) = /lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
 
-setStatus "Downloading additional scripts"
-cd /home/pi
-wget https://raw.githubusercontent.com/nexmonster/nexmon_csi/pi-4.19.97/reinstall.sh -O reinstall.sh
-setStatus "Completed"
 echo 'done 0020'
