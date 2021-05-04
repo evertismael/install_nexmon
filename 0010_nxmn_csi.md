@@ -50,6 +50,7 @@ nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
 Remove wpa_supplicant:
 ```sh
 apt remove wpasupplicant -y
+
 echo "denyinterfaces wlan0" >> /etc/dhcpcd.conf
 ```
 Setting up logical links:
@@ -73,7 +74,7 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzM2NjExOTUsMzY3Nzc5NjE5LDEyMT
-IwNTk0NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMCwtNDE1NTQw
-NzMsLTE2NTM0NjA4OTZdfQ==
+eyJoaXN0b3J5IjpbLTczMzEzNTE2MSwtMjA3MzY2MTE5NSwzNj
+c3Nzk2MTksMTIxMjA1OTQ3MiwxNDI2Njg2NDM0LC0xMjU5ODk4
+MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
 -->
