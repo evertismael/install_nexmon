@@ -47,6 +47,11 @@ nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
 - channel 36/80MHz:  `CH80MHZ_CHSPEC(42, WL_CHANSPEC_CTL_SB_LL),`
 - channel 100/80MHz:  `CH80MHZ_CHSPEC(106, WL_CHANSPEC_CTL_SB_LL),`
 
+Add patch for long recordings in 80MHz channels:
+```
+nano 
+```
+
 Remove wpa_supplicant:
 ```sh
 apt remove wpasupplicant -y
@@ -74,8 +79,8 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxODY3NjgxLC03MzMxMzUxNjEsLTIwNz
-M2NjExOTUsMzY3Nzc5NjE5LDEyMTIwNTk0NzIsMTQyNjY4NjQz
-NCwtMTI1OTg5ODAwMCwtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MDQ3OTg2OTksNzkxODY3NjgxLC03Mz
+MxMzUxNjEsLTIwNzM2NjExOTUsMzY3Nzc5NjE5LDEyMTIwNTk0
+NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMCwtNDE1NTQwNzMsLT
+E2NTM0NjA4OTZdfQ==
 -->
