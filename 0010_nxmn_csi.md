@@ -47,6 +47,10 @@ nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
 - channel 36/80MHz:  `CH80MHZ_CHSPEC(42, WL_CHANSPEC_CTL_SB_LL),`
 - channel 100/80MHz:  `CH80MHZ_CHSPEC(106, WL_CHANSPEC_CTL_SB_LL),`
 
+Remove wpa_supplicant:
+```sh
+
+```
 Setting up logical links:
 ```sh
 cd /home/pi
@@ -68,7 +72,7 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY3Nzc5NjE5LDEyMTIwNTk0NzIsMTQyNj
-Y4NjQzNCwtMTI1OTg5ODAwMCwtNDE1NTQwNzMsLTE2NTM0NjA4
-OTZdfQ==
+eyJoaXN0b3J5IjpbLTEzNDU3OTc3NzQsMzY3Nzc5NjE5LDEyMT
+IwNTk0NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMCwtNDE1NTQw
+NzMsLTE2NTM0NjA4OTZdfQ==
 -->
