@@ -35,9 +35,17 @@ git clone https://github.com/seemoo-lab/nexmon_csi.git
 ```
 Add chanspecs:
 
+- add `CH80MHZ_CHSPEC(58, WL_CHANSPEC_CTL_SB_UU),` in file  `nexmon_csi/src/regulations.c` in line 195 `unsigned short additional_valid_chanspecs[] = {`
+```sh
+nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
+```
+- channel 64/80MHz:  `CH80MHZ_CHSPEC(58, WL_CHANSPEC_CTL_SB_UU),`
+- channel 36/80MHz:  `CH80MHZ_CHSPEC(42, WL_CHANSPEC_CTL_SB_LL),`
+- channel 100/80MHz:  `CH80MHZ_CHSPEC(106, WL_CHANSPEC_CTL_SB_LL),`
 
 Setting up logical links:
 ```sh
+cd /home/pi
 sudo su
 tmux new -c /home/pi -s nexmon 'bash install_nexmon/scripts/0010_links.sh | tee ./0010.log'
 ```
@@ -53,53 +61,9 @@ sudo journalctl -b | grep brcmfmac
 
 output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Apr 28 2021 23:27:00 version 7.45.189 (nexmon.org/csi: v0.1.1-5-g9d86-1)
 ```
-## Simple test - No filtering (Listen to all data in the ether)
-- _Important:_ Router is configured with a specific channel and bandwidth (161/40) in this case
-
-```sh
-ip link set mon0 down
-ifconfig wlan0 down
-ifconfig wlan0 up 
-iw dev wlan0 interface add mon0 type monitor
-ip link set mon0 up 
-CFG_STR=$(mcp -c 36/80 -C 1 -N 1) 
-nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR 
-nexutil -k
-tcpdump -i wlan0 dst port 5500
-
-#to stream to a file:
-ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 100/80 -C 1 -N 1) ; nexutil -Iwlan0 -s500 -b -l34 -v$CFG_STR ; nexutil -k ; tcpdump -i wlan0 dst port 5500 -vv -w capture.pcap -c 1000
-```
-
-## Filter by MAC
-```sh
-ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -m b8:27:c5:9b:1c:d8) ; nexutil -Iwlan0 -s500 -b -l34 -v$CFG_STR ; nexutil -k ; tcpdump -i wlan0 dst port 5500
-
-#to stream to a file:
-ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -m b8:27:c5:9b:1c:d8) ; nexutil -Iwlan0 -s500 -b -l34 -v$CFG_STR ; nexutil -k ; tcpdump -i wlan0 dst port 5500 -vv -w capture.pcap -c 100
-```
 
 
-## Interprete the data:
-Use `scp` to collect the files to the central PC ( execute that in your location in the PC `Not in the rpi` ):
-```
-scp pi@10.10.10.102:/home/pi/capture.pcap ./
-```
-
-## Usefull MAC of `WIRELESS` nics
-| MAC  |      Device      |
-|----------|:-------------:|
-| 84:fd:d1:15:20:0c |  MSI laptop |
-| 64:70:02:CC:1B:24 |  Mother tp-link 5G |
-| b8:27:c5:9b:1c:d8 |  honor wifi 6 |
-| dc:a6:32:64:9a:65 | Amber4GB |
-| dc:a6:32:64:b9:11 | Betty4GB |
-|  |  |
-|  |  |
-
-
-## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTk4OTgwMDAsLTQxNTU0MDczLC0xNj
-UzNDYwODk2XX0=
+eyJoaXN0b3J5IjpbMTIxMjA1OTQ3MiwxNDI2Njg2NDM0LC0xMj
+U5ODk4MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
 -->
