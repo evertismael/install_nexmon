@@ -27,18 +27,16 @@ Download Nexmon CSI and install instructions:
 sudo su
 git clone https://github.com/seemoo-lab/nexmon.git
 git clone https://github.com/evertismael/install_nexmon.git
-cd nexmon
 
+cd nexmon
 NEXDIR=$(pwd)
 cd $NEXDIR/patches/bcm43455c0/7_45_189/
+git clone https://github.com/seemoo-lab/nexmon_csi.git
 ```
 
-
-
-Install nexmon and nexmon_csi:
+Setting up logical links:
 ```sh
 sudo su
-cp install_nexmon/0010_links.sh ./
 tmux new -c /home/pi -s nexmon 'bash 0010_links.sh | tee 0010.log'
 ```
 
@@ -101,6 +99,6 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjU3MDY3OTUsLTQxNTU0MDczLC0xNj
+eyJoaXN0b3J5IjpbLTE0MjAxNDYyOTcsLTQxNTU0MDczLC0xNj
 UzNDYwODk2XX0=
 -->
