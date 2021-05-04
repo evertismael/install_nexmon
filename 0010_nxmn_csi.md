@@ -50,7 +50,9 @@ nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
 
 Add patch for long recordings in 80MHz channels:
 ```
-nano 
+nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/patch.c
+
+# 
 ```
 
 Remove wpa_supplicant:
@@ -80,8 +82,8 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDk5NzM0OTYsLTE3MDQ3OTg2OTksNz
-kxODY3NjgxLC03MzMxMzUxNjEsLTIwNzM2NjExOTUsMzY3Nzc5
-NjE5LDEyMTIwNTk0NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMC
-wtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ==
+eyJoaXN0b3J5IjpbLTgwOTM2NDE3OSwtMTA0OTk3MzQ5NiwtMT
+cwNDc5ODY5OSw3OTE4Njc2ODEsLTczMzEzNTE2MSwtMjA3MzY2
+MTE5NSwzNjc3Nzk2MTksMTIxMjA1OTQ3MiwxNDI2Njg2NDM0LC
+0xMjU5ODk4MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
 -->
