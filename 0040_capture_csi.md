@@ -5,10 +5,11 @@
 pkill wpa_supplicant
 ip link set mon0 down
 ifconfig wlan0 down
+
 ifconfig wlan0 up 
 iw dev wlan0 interface add mon0 type monitor
 ip link set mon0 up 
-CFG_STR=$(mcp -c 36/80 -C 1 -N 1) 
+CFG_STR=$(mcp -c 36/20 -C 1 -N 1) 
 nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR 
 nexutil -k
 tcpdump -i wlan0 dst port 5500
@@ -46,5 +47,6 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTQ4MDc2MiwxOTQ1OTgwMzEyXX0=
+eyJoaXN0b3J5IjpbMTkyNzk3MzczMCwxNzI1NDgwNzYyLDE5ND
+U5ODAzMTJdfQ==
 -->
