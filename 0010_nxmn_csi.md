@@ -33,17 +33,18 @@ NEXDIR=$(pwd)
 cd $NEXDIR/patches/bcm43455c0/7_45_189/
 git clone https://github.com/seemoo-lab/nexmon_csi.git
 ```
+Add chanspecs:
+
 
 Setting up logical links:
 ```sh
 sudo su
-tmux new -c /home/pi -s nexmon 'bash 0010_links.sh | tee 0010.log'
+tmux new -c /home/pi -s nexmon 'bash install_nexmon/scripts/0010_links.sh | tee ./0010.log'
 ```
 
 ```sh
 sudo su
-cp install_nexmon/0020_install_nexmon.sh ./
-tmux new -c /home/pi -s nexmon 'bash 0020_install_nexmon.sh | tee 0020.log'
+tmux new -c /home/pi -s nexmon 'bash install_nexmon/scripts/0020_install_nexmon.sh | tee 0020.log'
 ```
 
 - check if install was sucessful:
@@ -99,6 +100,6 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjAxNDYyOTcsLTQxNTU0MDczLC0xNj
+eyJoaXN0b3J5IjpbLTEyNTk4OTgwMDAsLTQxNTU0MDczLC0xNj
 UzNDYwODk2XX0=
 -->
