@@ -35,6 +35,8 @@ git clone https://github.com/seemoo-lab/nexmon_csi.git
 ```
 Add chanspecs:
 
+- add 
+
 
 Setting up logical links:
 ```sh
@@ -56,6 +58,6 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNjY4NjQzNCwtMTI1OTg5ODAwMCwtND
-E1NTQwNzMsLTE2NTM0NjA4OTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MjA1MTA3NzIsMTQyNjY4NjQzNCwtMT
+I1OTg5ODAwMCwtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ==
 -->
