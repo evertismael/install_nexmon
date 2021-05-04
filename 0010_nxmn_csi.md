@@ -40,8 +40,8 @@ Add chanspecs:
 nano $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/src/regulations.c
 ```
 - channel 64/80MHz:  `CH80MHZ_CHSPEC(58, WL_CHANSPEC_CTL_SB_UU),`
-- channel 40/80MHz:  `CH80MHZ_CHSPEC(58, WL_CHANSPEC_CTL_SB_UU),`
-- channel 64/80MHz:  `CH80MHZ_CHSPEC(58, WL_CHANSPEC_CTL_SB_UU),`
+- channel 36/80MHz:  `CH80MHZ_CHSPEC(42, WL_CHANSPEC_CTL_SB_LL),`
+- channel 100/80MHz:  `CH80MHZ_CHSPEC(106, WL_CHANSPEC_CTL_SB_LL),`
 
 Setting up logical links:
 ```sh
@@ -63,6 +63,6 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjAyNjY4NjYsMTQyNjY4NjQzNCwtMT
-I1OTg5ODAwMCwtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ==
+eyJoaXN0b3J5IjpbNTE0NTQwMSwxNDI2Njg2NDM0LC0xMjU5OD
+k4MDAwLC00MTU1NDA3MywtMTY1MzQ2MDg5Nl19
 -->
