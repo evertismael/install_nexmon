@@ -70,7 +70,7 @@ cd /home/pi
 sudo su
 tmux new -c /home/pi -s nexmon 'bash install_nexmon/scripts/0010_links.sh | tee ./0010.log'
 ```
-
+Install Nexmon drivers & set up persistence
 ```sh
 sudo su
 tmux new -c /home/pi -s nexmon 'bash install_nexmon/scripts/0020_nxm_csi.sh | tee ./0020.log'
@@ -85,8 +85,9 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQyMzkxMDAwLC0xMDQ5OTczNDk2LC0xNz
-A0Nzk4Njk5LDc5MTg2NzY4MSwtNzMzMTM1MTYxLC0yMDczNjYx
-MTk1LDM2Nzc3OTYxOSwxMjEyMDU5NDcyLDE0MjY2ODY0MzQsLT
-EyNTk4OTgwMDAsLTQxNTU0MDczLC0xNjUzNDYwODk2XX0=
+eyJoaXN0b3J5IjpbNDIyOTA3NjUzLDg0MjM5MTAwMCwtMTA0OT
+k3MzQ5NiwtMTcwNDc5ODY5OSw3OTE4Njc2ODEsLTczMzEzNTE2
+MSwtMjA3MzY2MTE5NSwzNjc3Nzk2MTksMTIxMjA1OTQ3MiwxND
+I2Njg2NDM0LC0xMjU5ODk4MDAwLC00MTU1NDA3MywtMTY1MzQ2
+MDg5Nl19
 -->
