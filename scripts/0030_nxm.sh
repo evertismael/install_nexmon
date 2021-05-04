@@ -26,11 +26,15 @@ make install-firmware
 cd $NEXDIR/utilities/nexutil/
 make && make install
 
+apt-get remove wpasupplicant
+
 echo 'end build'
 
 
 setStatus "create mon0"
 iw phy `iw dev wlan0 info | gawk '/wiphy/ {printf "phy" $2}'` interface add mon0 type monitor
+ifconfig mon0 up
+
 echo "end mon0"
 
 
@@ -39,6 +43,17 @@ cd $NEXDIR/patches/bcm43455c0/7_45_206/nexmon/
 cd brcmfmac_5.4.y-nexmon
 mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig  #copy firmawe-backup.
 cp ./brcmfmac.ko $(modinfo brcmfmac -n)
+
+FILE_TXT="$NEXDIR/../brcmfmac43455-sdio.raspberrypi,4-model-b.txt"
+
+DEST1="/lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/"
+
+DEST2="/lib/firmware/brcm/"
+
+cp $FILE_TXT $DEST1
+
+cp $FILE_TXT $DEST2
+
 depmod -a
 #echo 'end patches'
 
