@@ -32,6 +32,10 @@ cd nexmon
 NEXDIR=$(pwd)
 cd $NEXDIR/patches/bcm43455c0/7_45_189/
 git clone https://github.com/seemoo-lab/nexmon_csi.git
+
+# missing file in driver:
+wget https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+
 ```
 Add chanspecs:
 
@@ -64,7 +68,7 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI0NDgyNDQsMTIxMjA1OTQ3MiwxND
-I2Njg2NDM0LC0xMjU5ODk4MDAwLC00MTU1NDA3MywtMTY1MzQ2
-MDg5Nl19
+eyJoaXN0b3J5IjpbMzY3Nzc5NjE5LDEyMTIwNTk0NzIsMTQyNj
+Y4NjQzNCwtMTI1OTg5ODAwMCwtNDE1NTQwNzMsLTE2NTM0NjA4
+OTZdfQ==
 -->
