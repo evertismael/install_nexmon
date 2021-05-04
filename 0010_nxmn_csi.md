@@ -1,12 +1,8 @@
 # Install nexmon CSI
-## Steps to Install the tool (device used: rpi4, 4GB)
 - _Important:_ `Don't update the firmware cause nexmon doesn't support latest version of raspiOS, don't use #_sudo apt-get upgrade_`.
 - If using cable for local network and Wifi for updates/installs then ensure dhcp of wired-network is not provided. Otherwise there is two gateways.
 -Source 1: https://github.com/nexmonster/nexmon_csi/tree/pi-5.4.51
 -Source 2: https://github.com/nexmonster/nexmon_csi/tree/pi-4.19.97#get-kernel-headers
-
-
-
 
 
 Install dependencies:
@@ -101,5 +97,5 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjIxMjA1MSwtMTY1MzQ2MDg5Nl19
+eyJoaXN0b3J5IjpbLTQxNTU0MDczLC0xNjUzNDYwODk2XX0=
 -->
