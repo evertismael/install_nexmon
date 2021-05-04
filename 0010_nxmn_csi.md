@@ -1,6 +1,6 @@
 # Step 1: Collection of Channel State Information CSI using nexmon_csi:
 
-
+Install nexmon CSI
 ## Steps to Install the tool (device used: rpi4, 4GB)
 - _Important:_ `Don't update the firmware cause nexmon doesn't support latest version of raspiOS, don't use #_sudo apt-get upgrade_`.
 - If using cable for local network and Wifi for updates/installs then ensure dhcp of wired-network is not provided. Otherwise there is two gateways.
@@ -128,3 +128,6 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 
 ## Troubleshooting
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2NTM0NjA4OTZdfQ==
+-->
