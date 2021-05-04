@@ -27,7 +27,10 @@ Download Nexmon CSI and install instructions:
 sudo su
 git clone https://github.com/seemoo-lab/nexmon.git
 git clone https://github.com/evertismael/install_nexmon.git
+cd nexmon
 
+NEXDIR=$(pwd)
+cd $NEXDIR/patches/bcm43455c0/7_45_189/
 ```
 
 
@@ -98,6 +101,6 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTUxMDU1MTUsLTQxNTU0MDczLC0xNj
+eyJoaXN0b3J5IjpbLTE5MjU3MDY3OTUsLTQxNTU0MDczLC0xNj
 UzNDYwODk2XX0=
 -->
