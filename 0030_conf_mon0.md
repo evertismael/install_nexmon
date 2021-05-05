@@ -14,3 +14,6 @@ iw mon0 info    # currect nic params
 # configure:
 sudo iw mon0 set freq 5180 80 5210
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTg5NjU4MjkwXX0=
+-->
