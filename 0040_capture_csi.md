@@ -26,7 +26,8 @@ Use `scp` to collect the files to the central PC ( execute that in your location
 scp pi@10.10.10.102:/home/pi/capture.pcap ./
 ```
 
-## Usefull MAC of `WIRELESS` nics
+## Usefull MAC of `WIRELESS` nics 
+Notice that these are my devices and yours can be very different
 | MAC  |      Device      |
 |----------|:-------------:|
 | 84:fd:d1:15:20:0c |  MSI laptop |
@@ -40,7 +41,7 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4NjQ4MDQzLC0xNjg0OTkzNDgsLTEzOD
-M0Mjk0MDQsNjc4NDU1OTU5LDEzNjkwNjY2ODMsMTkyNzk3Mzcz
-MCwxNzI1NDgwNzYyLDE5NDU5ODAzMTJdfQ==
+eyJoaXN0b3J5IjpbLTI1MTg1ODcyNSwtMTY4NDk5MzQ4LC0xMz
+gzNDI5NDA0LDY3ODQ1NTk1OSwxMzY5MDY2NjgzLDE5Mjc5NzM3
+MzAsMTcyNTQ4MDc2MiwxOTQ1OTgwMzEyXX0=
 -->
