@@ -59,7 +59,7 @@ BPatch(wlc_monitor_amsdu_patch, 0x1B6B1E);
 
 ```
 
-`Note: You can take an image from the sd at this moment to avoid going through the whole process again`
+`Note: You can take an image from the sd card at this moment to avoid going through the whole process again`
 
 Remove wpa_supplicant:
 ```sh
@@ -90,7 +90,7 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNjE2NDg4MCwtODA4NDA0Njc5LDQyMj
+eyJoaXN0b3J5IjpbMjA2NTY3NTg4MCwtODA4NDA0Njc5LDQyMj
 kwNzY1Myw4NDIzOTEwMDAsLTEwNDk5NzM0OTYsLTE3MDQ3OTg2
 OTksNzkxODY3NjgxLC03MzMxMzUxNjEsLTIwNzM2NjExOTUsMz
 Y3Nzc5NjE5LDEyMTIwNTk0NzIsMTQyNjY4NjQzNCwtMTI1OTg5
