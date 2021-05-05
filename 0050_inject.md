@@ -6,6 +6,7 @@ sudo su
 apt-get install python-pip
 pip install scapy
 ```
+Important: Something happens when I run `
 Run:
 ```sh
 sudo su
@@ -14,7 +15,7 @@ pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; iw phy `iw 
 sudo -E python /home/pi/install_nexmon/py_run/tx.py
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MjE1ODU3MSwyNTI3NDkxNDIsMTE5Nj
-AzMTQ0Nyw1NDcxMTY4OTIsLTI1MjM4MjQxOCw1OTA3OTg0MDAs
-LTExMTg0ODA0MTQsLTEyODYxOTA3MDJdfQ==
+eyJoaXN0b3J5IjpbNjA0MzA4NTgyLDEwNTIxNTg1NzEsMjUyNz
+Q5MTQyLDExOTYwMzE0NDcsNTQ3MTE2ODkyLC0yNTIzODI0MTgs
+NTkwNzk4NDAwLC0xMTE4NDgwNDE0LC0xMjg2MTkwNzAyXX0=
 -->
