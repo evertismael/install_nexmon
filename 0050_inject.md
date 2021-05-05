@@ -1,7 +1,11 @@
-1.- Create the mon0 interface:
+As suggested in https://github.com/seemoo-lab/nexmon_csi/issues/178
+
 ```sh
-iw phy `iw dev wlan0 info | gawk '/wiphy/ {printf "phy" $2}'` interface add mon0 type monitor
+sudo iw phy `iw dev wlan0 info | gawk '/wiphy/ {printf "phy" $2}'` interface add mon0 type monitor
+sudo ifconfig mon0 up
+nexutil -k7
+sudo -E python tx.py
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4ODcyNzIxMF19
+eyJoaXN0b3J5IjpbLTEyODYxOTA3MDJdfQ==
 -->
