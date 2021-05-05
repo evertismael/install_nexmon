@@ -17,9 +17,9 @@ pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; iw phy `iw 
 nexutil -k52/20 ; iw dev
 
 cd /home/pi/install_nexmon/py_run/
--E python tx.py
+sudo -E python tx.py
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTYwNzYyMSw1OTA3OTg0MDAsLTExMT
+eyJoaXN0b3J5IjpbLTI1MjM4MjQxOCw1OTA3OTg0MDAsLTExMT
 g0ODA0MTQsLTEyODYxOTA3MDJdfQ==
 -->
