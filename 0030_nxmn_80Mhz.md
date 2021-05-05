@@ -1,5 +1,5 @@
 # Install Nexmon-only NOT csi:
-## Case for 80 Mhz
+## Case for 80 Mhz :(
 * Notice that it's very similar to nexmon_CSI with some differences:
 - Kernel version: 5.4.83-v7l+
 
@@ -113,11 +113,11 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1MzI4NjE0LDY4NTM4MzkwOCwtMTk0MT
-I5MjU3NSw5NjQ5NjQzMjYsLTE5ODI1NDI4NDAsMTY4NzczNTIw
-NywzMzM2NDE1MDgsMTMyMjk0OTM2OCwtMzYzMTc5NTc5LDE2NT
-kwODI2MzgsMTkwOTA2NDE4OCwtMTg5OTQ4MTQ5NywtMTMyNDA3
-MDQyOSwtMTk4Mzc3OTcxNiwtNjkwMzQyODYxLDEwNzQ5MDMzOD
-EsNTgxNTM3ODAxLDE1Mzg1OTM5MTUsLTE5NTc3NzY2NTEsMTM0
-MDQwNDg4Ml19
+eyJoaXN0b3J5IjpbLTEzMzUxNDY2OTYsNjg1MzgzOTA4LC0xOT
+QxMjkyNTc1LDk2NDk2NDMyNiwtMTk4MjU0Mjg0MCwxNjg3NzM1
+MjA3LDMzMzY0MTUwOCwxMzIyOTQ5MzY4LC0zNjMxNzk1NzksMT
+Y1OTA4MjYzOCwxOTA5MDY0MTg4LC0xODk5NDgxNDk3LC0xMzI0
+MDcwNDI5LC0xOTgzNzc5NzE2LC02OTAzNDI4NjEsMTA3NDkwMz
+M4MSw1ODE1Mzc4MDEsMTUzODU5MzkxNSwtMTk1Nzc3NjY1MSwx
+MzQwNDA0ODgyXX0=
 -->
