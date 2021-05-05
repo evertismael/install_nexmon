@@ -10,8 +10,7 @@ pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wl
 
 ## Filter by MAC
 ```sh
-MAC_ORI='e4:5f:01:19:7b:56'
-pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -d 50) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
+MAC1='e4:5f:01:19:7b:56'; pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -d 50 -m $MAC1) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
 
 #to stream to a file:
 ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -m b8:27:c5:9b:1c:d8) ; nexutil -Iwlan0 -s500 -b -l34 -v$CFG_STR ; nexutil -k ; tcpdump -i wlan0 dst port 5500 -vv -w capture.pcap -c 100
@@ -38,7 +37,7 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzk2NDYyNDcsLTEzODM0Mjk0MDQsNj
+eyJoaXN0b3J5IjpbLTEwOTQzMTI1NjYsLTEzODM0Mjk0MDQsNj
 c4NDU1OTU5LDEzNjkwNjY2ODMsMTkyNzk3MzczMCwxNzI1NDgw
 NzYyLDE5NDU5ODAzMTJdfQ==
 -->
