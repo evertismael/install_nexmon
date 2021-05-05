@@ -19,7 +19,7 @@ make
 echo 'setting up environment'
 
 setStatus "Build patches"
-cd $NEXDIR/patches/bcm43455c0/7_45_206/nexmon/
+cd $NEXDIR/patches/bcm43455c0/7_45_189/nexmon/
 make
 make backup-firmware
 make install-firmware
@@ -39,7 +39,7 @@ echo "end mon0"
 
 
 #setStatus "Setting up Persistance"
-cd $NEXDIR/patches/bcm43455c0/7_45_206/nexmon/
+cd $NEXDIR/patches/bcm43455c0/7_45_189/nexmon/
 cd brcmfmac_5.4.y-nexmon
 mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig  #copy firmawe-backup.
 cp ./brcmfmac.ko $(modinfo brcmfmac -n)
