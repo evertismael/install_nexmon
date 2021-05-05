@@ -36,12 +36,9 @@ Notice that these are my devices and yours can be very different
 | dc:a6:32:64:9a:65 | Amber4GB |
 | dc:a6:32:64:b9:11 | Betty4GB |
 |  |  |
-|  |  |
 
-
-## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTg1ODcyNSwtMTY4NDk5MzQ4LC0xMz
+eyJoaXN0b3J5IjpbMTMwNTUyMjYwNSwtMTY4NDk5MzQ4LC0xMz
 gzNDI5NDA0LDY3ODQ1NTk1OSwxMzY5MDY2NjgzLDE5Mjc5NzM3
 MzAsMTcyNTQ4MDc2MiwxOTQ1OTgwMzEyXX0=
 -->
