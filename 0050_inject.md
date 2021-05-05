@@ -1,10 +1,11 @@
 As suggested in https://github.com/seemoo-lab/nexmon_csi/issues/178
 
 Install scapy:
+```sh
 sudo su
 apt-get install python-pip
 pip install scapy
-
+```
 
 
 
@@ -15,5 +16,6 @@ nexutil -k7
 sudo -E python tx.py
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzNzYxMDY3LC0xMjg2MTkwNzAyXX0=
+eyJoaXN0b3J5IjpbLTExMTg0ODA0MTQsLTEyODYxOTA3MDJdfQ
+==
 -->
