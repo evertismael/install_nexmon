@@ -1,5 +1,5 @@
-## Simple test - No filtering (Listen to all data in the ether)
-- _Important:_ Router is configured with a specific channel and bandwidth (161/40) in this case
+## Simple test - No filtering (Listen to all data in the channel)
+- _Important:_ Router is configured with a specific channel and bandwidth (3/40) in this case
 
 ```sh
 pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -d 50) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
@@ -40,7 +40,7 @@ scp pi@10.10.10.102:/home/pi/capture.pcap ./
 
 ## Troubleshooting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQ5OTM0OCwtMTM4MzQyOTQwNCw2Nz
-g0NTU5NTksMTM2OTA2NjY4MywxOTI3OTczNzMwLDE3MjU0ODA3
-NjIsMTk0NTk4MDMxMl19
+eyJoaXN0b3J5IjpbLTE0NzgxNzk0MzQsLTE2ODQ5OTM0OCwtMT
+M4MzQyOTQwNCw2Nzg0NTU5NTksMTM2OTA2NjY4MywxOTI3OTcz
+NzMwLDE3MjU0ODA3NjIsMTk0NTk4MDMxMl19
 -->
