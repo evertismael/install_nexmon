@@ -17,9 +17,10 @@ sudo ifconfig mon0 up
 nexutil -k36/20
 iw dev
 
+cd /home/pi/install_nexmon/py_run/
 sudo -E python tx.py
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzgwNjcyOSwtMTExODQ4MDQxNCwtMT
-I4NjE5MDcwMl19
+eyJoaXN0b3J5IjpbLTEzNDg5NjQ1NTEsLTExMTg0ODA0MTQsLT
+EyODYxOTA3MDJdfQ==
 -->
