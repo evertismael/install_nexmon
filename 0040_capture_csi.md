@@ -12,7 +12,7 @@ pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wl
 ```sh
 MAC1='64:70:02:CC:1B:24';
 
-MAC1='84:fd:d1:15:20:0c';
+	MAC1='84:fd:d1:15:20:0c';
 pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -d 50 -m $MAC1) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
 
 #to stream to a file:
@@ -38,8 +38,8 @@ Notice that these are my devices and yours can be very different
 |  |  |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM5MjU2MDg5LDQyMTUwMjExNSwtMTI0NT
-YzMzAyNSwxMzA1NTIyNjA1LC0xNjg0OTkzNDgsLTEzODM0Mjk0
-MDQsNjc4NDU1OTU5LDEzNjkwNjY2ODMsMTkyNzk3MzczMCwxNz
-I1NDgwNzYyLDE5NDU5ODAzMTJdfQ==
+eyJoaXN0b3J5IjpbMTIyNjE1ODIwOSw0MjE1MDIxMTUsLTEyND
+U2MzMwMjUsMTMwNTUyMjYwNSwtMTY4NDk5MzQ4LC0xMzgzNDI5
+NDA0LDY3ODQ1NTk1OSwxMzY5MDY2NjgzLDE5Mjc5NzM3MzAsMT
+cyNTQ4MDc2MiwxOTQ1OTgwMzEyXX0=
 -->
