@@ -27,14 +27,13 @@ sudo ip link set wlan0 up
 
 ### mount usb:
 ```sh
- fdisk -l
- mkdir /media/usb-drive
- mount /dev/sdc1 /media/usb-drive/
- mount | grep sdc1
 
-cd /media/pi/PS_USB
-cp nano.jpg /home/pi/PiStormsprograms/
+sudo mkdir /media/usbstick
+mount -t vfat -o rw /dev/sda1 /media/usbstick/
+cd /media/usbstick  
+ls -l
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzI4ODM4MjYsNTgxNDY2MDU5XX0=
+eyJoaXN0b3J5IjpbMTgxNzYyOTkxMCw1ODE0NjYwNTldfQ==
 -->
