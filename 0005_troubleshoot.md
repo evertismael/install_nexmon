@@ -31,7 +31,10 @@ sudo ip link set wlan0 up
  mkdir /media/usb-drive
  mount /dev/sdc1 /media/usb-drive/
  mount | grep sdc1
+
+cd /media/pi/PS_USB
+cp nano.jpg /home/pi/PiStormsprograms/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MDU1NTAzMSw1ODE0NjYwNTldfQ==
+eyJoaXN0b3J5IjpbLTE0NzI4ODM4MjYsNTgxNDY2MDU5XX0=
 -->
