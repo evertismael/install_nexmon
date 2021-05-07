@@ -24,6 +24,14 @@ rfkill list all
 sudo rfkill unblock all
 sudo ip link set wlan0 up
 ```
+
+### mount usb:
+```sh
+ fdisk -l
+ mkdir /media/usb-drive
+ mount /dev/sdc1 /media/usb-drive/
+ mount | grep sdc1
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNDY2MDU5XX0=
+eyJoaXN0b3J5IjpbLTY5MDU1NTAzMSw1ODE0NjYwNTldfQ==
 -->
