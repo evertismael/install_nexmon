@@ -27,6 +27,7 @@ sudo ip link set wlan0 up
 
 ### mount usb:
 ```sh
+apt-get install libpcap-dev
 
 sudo mkdir /media/usbstick
 mount -t vfat -o rw /dev/sda1 /media/usbstick/
@@ -35,5 +36,5 @@ ls -l
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzYyOTkxMCw1ODE0NjYwNTldfQ==
+eyJoaXN0b3J5IjpbLTIyMjkzOTQ2MCw1ODE0NjYwNTldfQ==
 -->
