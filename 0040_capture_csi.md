@@ -2,10 +2,10 @@
 - _Important:_ Router is configured with a specific channel and bandwidth (e.x. 36/80) in this case
 
 ```sh
-pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -d 50) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
+pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 64/80 -C 1 -N 1 -d 50) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500
 
 #to stream to a file:
-pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 36/80 -C 1 -N 1 -d 50) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500 -vv -w capture.pcap -c 1000
+pkill wpa_supplicant ; ip link set mon0 down ; ifconfig wlan0 down ; ifconfig wlan0 up ; iw dev wlan0 interface add mon0 type monitor ; ip link set mon0 up ; CFG_STR=$(mcp -c 64/80 -C 1 -N 1 -d 50) ; nexutil -I wlan0 -s 500 -b -l 34 -v $CFG_STR ; iw dev ; nexutil -k ; tcpdump -i wlan0 dst port 5500 -vv -w capture.pcap -c 1000
 ```
 
 ## Filter by MAC
@@ -38,8 +38,8 @@ Notice that these are my devices and yours can be very different
 |  |  |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxNTAyMTE1LC0xMjQ1NjMzMDI1LDEzMD
-U1MjI2MDUsLTE2ODQ5OTM0OCwtMTM4MzQyOTQwNCw2Nzg0NTU5
-NTksMTM2OTA2NjY4MywxOTI3OTczNzMwLDE3MjU0ODA3NjIsMT
-k0NTk4MDMxMl19
+eyJoaXN0b3J5IjpbMzM5MjU2MDg5LDQyMTUwMjExNSwtMTI0NT
+YzMzAyNSwxMzA1NTIyNjA1LC0xNjg0OTkzNDgsLTEzODM0Mjk0
+MDQsNjc4NDU1OTU5LDEzNjkwNjY2ODMsMTkyNzk3MzczMCwxNz
+I1NDgwNzYyLDE5NDU5ODAzMTJdfQ==
 -->
