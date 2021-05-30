@@ -1,9 +1,9 @@
-# Install Nexmon-only NOT csi:
+# Install Nexmon-only NOT csiTransmit in a 80MHz bandwidth:
 ## Case for 80 Mhz :(
 * Notice that it's very similar to nexmon_CSI with some differences:
 - Kernel version: 5.4.83-v7l+
 
-
+    
 Install dependencies:
 ```sh
 sudo apt-get update
@@ -113,11 +113,11 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzUxNDY2OTYsNjg1MzgzOTA4LC0xOT
-QxMjkyNTc1LDk2NDk2NDMyNiwtMTk4MjU0Mjg0MCwxNjg3NzM1
-MjA3LDMzMzY0MTUwOCwxMzIyOTQ5MzY4LC0zNjMxNzk1NzksMT
-Y1OTA4MjYzOCwxOTA5MDY0MTg4LC0xODk5NDgxNDk3LC0xMzI0
-MDcwNDI5LC0xOTgzNzc5NzE2LC02OTAzNDI4NjEsMTA3NDkwMz
-M4MSw1ODE1Mzc4MDEsMTUzODU5MzkxNSwtMTk1Nzc3NjY1MSwx
-MzQwNDA0ODgyXX0=
+eyJoaXN0b3J5IjpbODE1Mjk0NTkwLC0xMzM1MTQ2Njk2LDY4NT
+M4MzkwOCwtMTk0MTI5MjU3NSw5NjQ5NjQzMjYsLTE5ODI1NDI4
+NDAsMTY4NzczNTIwNywzMzM2NDE1MDgsMTMyMjk0OTM2OCwtMz
+YzMTc5NTc5LDE2NTkwODI2MzgsMTkwOTA2NDE4OCwtMTg5OTQ4
+MTQ5NywtMTMyNDA3MDQyOSwtMTk4Mzc3OTcxNiwtNjkwMzQyOD
+YxLDEwNzQ5MDMzODEsNTgxNTM3ODAxLDE1Mzg1OTM5MTUsLTE5
+NTc3NzY2NTFdfQ==
 -->
