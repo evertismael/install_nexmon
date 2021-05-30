@@ -6,9 +6,11 @@
 
 # Setting up the transmitter:
 
-* Burn a normal image downloaded from rpi-web page. We use the same image as 
+* Burn a normal image downloaded from rpi-web page. We use the same image as wit the sniffers rpi's.  Kernel version: 5.4.83-v7l+.
+* 
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODUzMTcxMCw4MTUyOTQ1OTAsLTEzMz
+eyJoaXN0b3J5IjpbLTEwMzY4NzE5MCw4MTUyOTQ1OTAsLTEzMz
 UxNDY2OTYsNjg1MzgzOTA4LC0xOTQxMjkyNTc1LDk2NDk2NDMy
 NiwtMTk4MjU0Mjg0MCwxNjg3NzM1MjA3LDMzMzY0MTUwOCwxMz
 IyOTQ5MzY4LC0zNjMxNzk1NzksMTY1OTA4MjYzOCwxOTA5MDY0
