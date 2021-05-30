@@ -4,7 +4,7 @@
 -Source 1: https://github.com/nexmonster/nexmon_csi/tree/pi-5.4.51
 -Source 2: https://github.com/nexmonster/nexmon_csi/tree/pi-4.19.97#get-kernel-headers
 
-- Kernel version: 5.4.83-v7l+
+- Kernel version: 5.4.83-v7l+, download it from https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2021-01-12/
 
 Install dependencies:
 ```sh
@@ -90,10 +90,10 @@ output: Apr 28 23:27:34 Amber4GB kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmwa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTY3NTg4MCwtMTE2MjM3Mzg1NiwyMD
-Y1Njc1ODgwLC04MDg0MDQ2NzksNDIyOTA3NjUzLDg0MjM5MTAw
-MCwtMTA0OTk3MzQ5NiwtMTcwNDc5ODY5OSw3OTE4Njc2ODEsLT
-czMzEzNTE2MSwtMjA3MzY2MTE5NSwzNjc3Nzk2MTksMTIxMjA1
-OTQ3MiwxNDI2Njg2NDM0LC0xMjU5ODk4MDAwLC00MTU1NDA3My
-wtMTY1MzQ2MDg5Nl19
+eyJoaXN0b3J5IjpbNzE2NzU3NTY2LDIwNjU2NzU4ODAsLTExNj
+IzNzM4NTYsMjA2NTY3NTg4MCwtODA4NDA0Njc5LDQyMjkwNzY1
+Myw4NDIzOTEwMDAsLTEwNDk5NzM0OTYsLTE3MDQ3OTg2OTksNz
+kxODY3NjgxLC03MzMxMzUxNjEsLTIwNzM2NjExOTUsMzY3Nzc5
+NjE5LDEyMTIwNTk0NzIsMTQyNjY4NjQzNCwtMTI1OTg5ODAwMC
+wtNDE1NTQwNzMsLTE2NTM0NjA4OTZdfQ==
 -->
