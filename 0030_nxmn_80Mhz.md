@@ -8,23 +8,26 @@
 
 * Burn a normal image downloaded from rpi-web page. We use the same image as wit the sniffers rpi's.  Kernel version: 5.4.83-v7l+.
 ```sh
+sudo su
 sudo apt-get update
 sudo apt python3 python3-pip git
+pip install scapy
 sudo reboot
 ```
 
-* Clone the respository:
+* Clone the repository:
 
 ```sh
+sudo su
 git clone https://github.com/evertismael/install_nexmon.git
 ```
 *  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODQ1NjQyNyw4MTUyOTQ1OTAsLTEzMz
-UxNDY2OTYsNjg1MzgzOTA4LC0xOTQxMjkyNTc1LDk2NDk2NDMy
-NiwtMTk4MjU0Mjg0MCwxNjg3NzM1MjA3LDMzMzY0MTUwOCwxMz
-IyOTQ5MzY4LC0zNjMxNzk1NzksMTY1OTA4MjYzOCwxOTA5MDY0
-MTg4LC0xODk5NDgxNDk3LC0xMzI0MDcwNDI5LC0xOTgzNzc5Nz
-E2LC02OTAzNDI4NjEsMTA3NDkwMzM4MSw1ODE1Mzc4MDEsMTUz
-ODU5MzkxNV19
+eyJoaXN0b3J5IjpbLTEwMjU2MzI4OTYsODE1Mjk0NTkwLC0xMz
+M1MTQ2Njk2LDY4NTM4MzkwOCwtMTk0MTI5MjU3NSw5NjQ5NjQz
+MjYsLTE5ODI1NDI4NDAsMTY4NzczNTIwNywzMzM2NDE1MDgsMT
+MyMjk0OTM2OCwtMzYzMTc5NTc5LDE2NTkwODI2MzgsMTkwOTA2
+NDE4OCwtMTg5OTQ4MTQ5NywtMTMyNDA3MDQyOSwtMTk4Mzc3OT
+cxNiwtNjkwMzQyODYxLDEwNzQ5MDMzODEsNTgxNTM3ODAxLDE1
+Mzg1OTM5MTVdfQ==
 -->
