@@ -46,13 +46,13 @@ sudo su
 nexutil -k48/20 ; iw dev
 sudo -E python /home/pi/install_nexmon/py_run/tx.py
 ```
-* To configure the transmission rate modify the value of the attibute 'inter' in the last line of the file  'py_run/tx.py'
+* To configure the transmission rate modify the value of the attibute 'interval' in the last line of the file  'py_run/tx.py'
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE1NjE4ODk2LDgxNTI5NDU5MCwtMTMzNT
-E0NjY5Niw2ODUzODM5MDgsLTE5NDEyOTI1NzUsOTY0OTY0MzI2
-LC0xOTgyNTQyODQwLDE2ODc3MzUyMDcsMzMzNjQxNTA4LDEzMj
-I5NDkzNjgsLTM2MzE3OTU3OSwxNjU5MDgyNjM4LDE5MDkwNjQx
-ODgsLTE4OTk0ODE0OTcsLTEzMjQwNzA0MjksLTE5ODM3Nzk3MT
-YsLTY5MDM0Mjg2MSwxMDc0OTAzMzgxLDU4MTUzNzgwMSwxNTM4
-NTkzOTE1XX0=
+eyJoaXN0b3J5IjpbLTkwMzkwNTk5Nyw4MTUyOTQ1OTAsLTEzMz
+UxNDY2OTYsNjg1MzgzOTA4LC0xOTQxMjkyNTc1LDk2NDk2NDMy
+NiwtMTk4MjU0Mjg0MCwxNjg3NzM1MjA3LDMzMzY0MTUwOCwxMz
+IyOTQ5MzY4LC0zNjMxNzk1NzksMTY1OTA4MjYzOCwxOTA5MDY0
+MTg4LC0xODk5NDgxNDk3LC0xMzI0MDcwNDI5LC0xOTgzNzc5Nz
+E2LC02OTAzNDI4NjEsMTA3NDkwMzM4MSw1ODE1Mzc4MDEsMTUz
+ODU5MzkxNV19
 -->
