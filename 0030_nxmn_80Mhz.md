@@ -46,8 +46,9 @@ sudo su
 nexutil -k48/20 ; iw dev
 sudo -E python /home/pi/install_nexmon/py_run/tx.py
 ```
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNTE1MTA3NSw4MTUyOTQ1OTAsLTEzMz
+eyJoaXN0b3J5IjpbLTcxNzk3MzQ3Nyw4MTUyOTQ1OTAsLTEzMz
 UxNDY2OTYsNjg1MzgzOTA4LC0xOTQxMjkyNTc1LDk2NDk2NDMy
 NiwtMTk4MjU0Mjg0MCwxNjg3NzM1MjA3LDMzMzY0MTUwOCwxMz
 IyOTQ5MzY4LC0zNjMxNzk1NzksMTY1OTA4MjYzOCwxOTA5MDY0
