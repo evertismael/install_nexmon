@@ -42,8 +42,8 @@ echo 'end nexutil'
 setStatus "Setting up Persistance"
 cd $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/
 cd brcmfmac_5.4.y-nexmon
-mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig
-cp ./brcmfmac.ko $(modinfo brcmfmac -n)
+mv /lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko ./brcmfmac.ko.orig
+cp ./brcmfmac.ko /lib/modules/5.4.83-v7l+/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
 
 FILE_TXT="$NEXDIR/patches/bcm43455c0/7_45_189/brcmfmac43455-sdio.raspberrypi,4-model-b.txt"
 
