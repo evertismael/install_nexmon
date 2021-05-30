@@ -21,13 +21,28 @@ sudo reboot
 sudo su
 git clone https://github.com/evertismael/install_nexmon.git
 ```
-*  
+* Important: Something weird happens when I run ```iw phy `iw dev wlan0 info | gawk '/wiphy/ {printf "phy" $2}'` interface add mon0 type monitor``` , I get an error: `-95` and It doesn't transmit anymore even-though scapy works properly.
+ 
+If it's the first run (immediately after reboot): 
+```sh
+sudo su
+pkill wpa_supplicant ; ifconfig wlan0 down ; iw phy `iw dev wlan0 info | gawk '/wiphy/ {printf "phy" $2}'` interface add mon0 type monitor; ifconfig mon0 up ; nexutil -k36/20 ; iw dev
+
+sudo -E python /home/pi/install_nexmon/py_run/tx.py
+```
+
+If it's the second run (to change to other channel without reboot): 
+```sh
+sudo su
+nexutil -k48/20 ; iw dev
+sudo -E python /home/pi/install_nexmon/py_run/tx.py
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjU2MzI4OTYsODE1Mjk0NTkwLC0xMz
-M1MTQ2Njk2LDY4NTM4MzkwOCwtMTk0MTI5MjU3NSw5NjQ5NjQz
-MjYsLTE5ODI1NDI4NDAsMTY4NzczNTIwNywzMzM2NDE1MDgsMT
-MyMjk0OTM2OCwtMzYzMTc5NTc5LDE2NTkwODI2MzgsMTkwOTA2
-NDE4OCwtMTg5OTQ4MTQ5NywtMTMyNDA3MDQyOSwtMTk4Mzc3OT
-cxNiwtNjkwMzQyODYxLDEwNzQ5MDMzODEsNTgxNTM3ODAxLDE1
-Mzg1OTM5MTVdfQ==
+eyJoaXN0b3J5IjpbMjY4OTk0NzcyLDgxNTI5NDU5MCwtMTMzNT
+E0NjY5Niw2ODUzODM5MDgsLTE5NDEyOTI1NzUsOTY0OTY0MzI2
+LC0xOTgyNTQyODQwLDE2ODc3MzUyMDcsMzMzNjQxNTA4LDEzMj
+I5NDkzNjgsLTM2MzE3OTU3OSwxNjU5MDgyNjM4LDE5MDkwNjQx
+ODgsLTE4OTk0ODE0OTcsLTEzMjQwNzA0MjksLTE5ODM3Nzk3MT
+YsLTY5MDM0Mjg2MSwxMDc0OTAzMzgxLDU4MTUzNzgwMSwxNTM4
+NTkzOTE1XX0=
 -->
