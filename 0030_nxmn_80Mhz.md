@@ -1,9 +1,10 @@
 # Transmit in a 80MHz bandwidth:
 * Notice that we don't use Nexmon to do frame injection. We set a normal rpi instead. The setup consists of 3 elements:
 	* Router : It properly opens a wifi network on channel 36 with 80MHz bandwidth. It should be configured to support protocols 802.11a/b/g/ac (or just 802.11ac is fine too).
-	* Tx-rpi: A rpi (with a normal installation) is connected to the network opened by the Router, and sends ICMP packets to the router at a specific rate. This file is meant to set-up properly the ''
+	* Tx-rpi: A rpi (with a normal installation) is connected to the network opened by the Router, and sends ICMP packets to the router at a specific rate. This file is meant to set-up properly the 'Tx-rpi'.
+	* N-rpi's: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NzY3NTM1Nyw4MTUyOTQ1OTAsLTEzMz
+eyJoaXN0b3J5IjpbLTc3ODM0MTY0Myw4MTUyOTQ1OTAsLTEzMz
 UxNDY2OTYsNjg1MzgzOTA4LC0xOTQxMjkyNTc1LDk2NDk2NDMy
 NiwtMTk4MjU0Mjg0MCwxNjg3NzM1MjA3LDMzMzY0MTUwOCwxMz
 IyOTQ5MzY4LC0zNjMxNzk1NzksMTY1OTA4MjYzOCwxOTA5MDY0
